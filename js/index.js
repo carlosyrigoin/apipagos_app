@@ -16,15 +16,41 @@ async function getPagos() {
 	});
 }
 
+async function getPagosVencidos() {
+	const response = await fetch(url_base+"api/expired_payments/", {
+      	method: "GET",
+      	headers: {
+      		"Content-Type": "application/json",
+      		"Authorization": "Bearer "+sesion_app_pagos.token_access
+      	},
+    });
+	const data = await response.json();
+
+	data.results.forEach((pago) => {
+		container_pagos_vencidos.innerHTML += renderPagoVencido(pago);
+	});
+}
+
 getPagos();
+getPagosVencidos();
 
 function renderPagoRealizado(pago) {
 	return `
 		<tr>
-			<td>${pago.user_id}</td>
-			<td>${pago.service_id}</td>
+			<td><i class="fe-file-text"></i></td>
+			<td>Codigo servicio: ${pago.service_id}</td>
 			<td>${pago.paymentdate}</td>
 			<td>${pago.amount}</td>
+		</tr>
+	`;
+}
+
+function renderPagoVencido(pago) {
+	return `
+		<tr>
+			<td class="text-white"><i class="fe-file-text"></i></td>
+			<td class="text-white">Codigo servicio de usuario: ${pago.pay_user_id}</td>
+			<td class="text-white">${pago.penalty_free_amount}</td>
 		</tr>
 	`;
 }
