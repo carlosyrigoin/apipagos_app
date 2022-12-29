@@ -1,0 +1,22 @@
+.bg-login{
+    background-image: url("../img/bg_login.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.bg-form-login{
+	background: #fff;
+	border-radius: 40px;
+	margin-top: 6%;
+	padding: 4% 6%
+}
+
+.bg-info{
+	background-color: #90caf9 !important;
+}
+
+.visible-false{
+	display: none;
+}

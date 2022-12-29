@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>App pago servicios | Login</title>
+        <link rel="icon" type="image/png" href="./img/favicon.png">
+
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/fuentes.css">
+        <link rel="stylesheet" href="./css/icons.min.css">
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body class="bg-login">
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-md-5 bg-form-login">
+                    <div class="text-center">
+                        <h2 class="text-info fw-bold">BIENVENIDO!</h2>
+                        <h2 class="fw-bold">Iniciar Sesión</h2>
+                    </div>
+                    <form class="form-login mt-5" action="">
+                        <div class="mb-3">
+                            <label class="text-secondary fw-bold"><i class="fe-mail"></i> Correo electrónico</label>
+                            <input type="email" class="form-control" id="email" autocomplete="off" maxlength="100" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="text-secondary fw-bold"><i class="fe-lock"></i> Contraseña</label>
+                            <input type="password" class="form-control" id="password" maxlength="100" required>
+                        </div>
+                        <div class="text-center d-grid mb-3">
+                            <button type="submit" class="btn btn-info"><i class="fe-arrow-right-circle"></i> Ingresar</button>
+                        </div>
+                    </form>
+                    <div class="text-center mt-5">
+                        <i>© Derechos reservados - <b>Carlos Yrigoín</b></i>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <img src="./img/login.png" width="100%">
+                    <div class="text-center mt-5">
+                        <h2 class="text-secondary fw-bold">App Pago de Servicios</h2>
+                        <p>Desarrollado en el curso BackEnd - Silabuz</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script src="./js/assets/bootstrap.min.js"></script>
+        <script src="./js/assets/sweetalert2.min.js"></script>
+        <script src="./js/login.js"></script>
+    </body>
+</html>
