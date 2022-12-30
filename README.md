@@ -1,6 +1,6 @@
 # Proyecto Fronted App Pago de Servicios
 
-- Desarrollado en el curso de Desarrollador Backend - Silabus
+- Desarrollado en el curso de Desarrollador Backend - Silabuz
 
 # Link de acceso a la aplicacion
 
