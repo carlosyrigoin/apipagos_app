@@ -1,4 +1,5 @@
-const url_base = "http://127.0.0.1:8000/"
+// const url_base = "http://127.0.0.1:8000/"
+const url_base = "https://apipagosrailway-production.up.railway.app/"
 const form = document.querySelector("form")
 const email = document.getElementById("email")
 const password = document.getElementById("password")

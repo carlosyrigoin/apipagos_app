@@ -1,4 +1,5 @@
-const url_base = "http://127.0.0.1:8000/"
+// const url_base = "http://127.0.0.1:8000/"
+const url_base = "https://apipagosrailway-production.up.railway.app/"
 const sesion_app_pagos = JSON.parse(localStorage.getItem("sesion_app_pagos")) ?? {}
 if (Object.entries(sesion_app_pagos).length === 0) {
 	window.location.href = "./login.html"
